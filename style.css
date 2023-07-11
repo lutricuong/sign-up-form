@@ -1,12 +1,93 @@
-.body {
+body {
     display: flex;
+    gap: 30px;
+    margin: auto;
+    max-width: 1000px;
+    border: solid 1px red;
 }
 
+.bg {
+    max-width: 500px;
+    max-height: 900px;
+}
 .logo {
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     color: white;
     justify-content: center;
     align-items: center;
+    position: relative;
+    top: -700px;
+    padding: 15px;
 }
 
+.logo > div {
+    font-size: 70px;
+}
+
+.credit {
+    position: relative;
+    top: -160px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+
+.header1 {
+    margin-top: 150px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.header2 {
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.divform > div {
+    margin-top: 40px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.inputForm {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.form > button {
+    margin-top: 40px;
+    border: 0;
+    border-radius: 10px;
+    padding: 12px 50px;
+    background-color: limegreen;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+}
+
+.firstColumn, .secondColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.divbody {
+    display: flex;
+    flex-direction: column;
+}
+
+.divform {
+    display: flex;
+    flex-direction: column;
+}
