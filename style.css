@@ -1,40 +1,45 @@
 body {
     display: flex;
-    gap: 30px;
     margin: auto;
-    max-width: 1000px;
-    border: solid 1px red;
 }
 
-.bg {
+.background {
     max-width: 500px;
-    max-height: 900px;
+    max-height: 800px;
 }
-.logo {
+.divlogo {
+    position: absolute;
+    top: 150px;
+    padding: 15px 122px;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     color: white;
     justify-content: center;
     align-items: center;
-    position: relative;
-    top: -700px;
-    padding: 15px;
 }
 
-.logo > div {
+.divlogo > div {
     font-size: 70px;
 }
 
 .credit {
-    position: relative;
-    top: -160px;
+    position: absolute;
+    top: 875px;
+    left: 125px;
     text-align: center;
     color: white;
     font-size: 14px;
 }
 
+.divbody {
+    background-color: rgba(232, 235, 242, 0.8);
+}
+
+.header {
+    padding: 100px 100px 30px 30px;
+}
+
 .header1 {
-    margin-top: 150px;
     font-size: 25px;
     font-weight: 600;
 }
@@ -45,8 +50,12 @@ body {
     font-weight: 600;
 }
 
-.divform > div {
-    margin-top: 40px;
+.form > div {
+    padding: 30px;
+    background-color: white;
+}
+
+.caption {
     font-size: 25px;
     font-weight: 600;
 }
@@ -57,8 +66,16 @@ body {
     margin-top: 20px;
 }
 
+.firstColumn, .secondColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
 .form > button {
-    margin-top: 40px;
+    margin: 30px 0 0 30px;
     border: 0;
     border-radius: 10px;
     padding: 12px 50px;
@@ -68,26 +85,11 @@ body {
     color: white;
 }
 
-.firstColumn, .secondColumn {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    font-size: 15px;
-    font-weight: 500;
-}
-
 .footer {
-    margin-top: 20px;
+    padding: 30px 0 30px 30px;
     font-size: 22px;
     font-weight: 500;
+    background-color: rgba(232, 235, 242, 0.8);
 }
 
-.divbody {
-    display: flex;
-    flex-direction: column;
-}
 
-.divform {
-    display: flex;
-    flex-direction: column;
-}
