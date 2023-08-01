@@ -5,8 +5,8 @@
 
 .content {
     display: flex;
-    width: 97vw;
-    height: 97vh;
+    width: 100%;
+    height: 100vh;
 }
 
 .left {
@@ -14,12 +14,12 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 50vw;
+    width: 40%;
 }
 
 .logo {
     font-family: 'norseBold';
-    font-size: 7vh;
+    font-size: 8vh;
     display: flex;
     gap: 5px;
     justify-content: center;
@@ -38,9 +38,91 @@
 .credit {
     color: white;
     position: relative;
-    top: 82vh;
+    top: 85vh;
     text-align: center;
     font-size: 1.5vh;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    background-color: rgba(232, 235, 242, 0.8);
+}
+
+.header{
+    font-size: 25px;
+    font-weight: 700;
+    padding-left: 3vw;
+    padding-right: 5vw;
+}
+
+.header1 {
+    margin: 0;
+}
+.header2 {
+    margin-top: 0.5vh;
+}
+.header3 {
+    padding-top: 2vh;
+    padding-bottom: 5vh;
+}
+
+.formAll {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding-left: 3vw;
+    padding-right: 5vw;
+}
+
+.title {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 3vh;
+    padding-top: 2vh;
+}
+
+.form {
+    display: flex;
+    gap: 5vw;
+    margin-bottom: 3vh;
+}
+
+.formLeft, .formRight {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    gap: 2vh;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    font-size: 14px;
+}
+
+.button {
+    padding: 3vh 5vw 3vh 3vw;
+}
+
+button {
+    border: 0;
+    border-radius: 10px;
+    padding: 12px 50px;
+    background-color: #596D48;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+}
+
+.footer {
+    padding-left: 3vw;
+    padding-right: 5vw;
+    font-size: 22px;
+    font-weight: 500;
 }
 /* .divlogo {
     position: absolute;
