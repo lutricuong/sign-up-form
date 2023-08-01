@@ -7,58 +7,58 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <img class="background" src="bg.jpg" alt="background" width="500px" height="900px">
-        <div class="divlogo">
-            <img src="odin-lined.png" alt="logo" class="logo" width="80px">
-            <div>ODIN</div>
+    <div class="content">
+        <div class="left">
+                <img src="odin-lined.png" alt="logo" class="logo">
+                <div>ODIN</div>
+            </div>
+            <div class="credit">Photo by Lexi Laginess on unsplash.com</div>
         </div>
-        <div class="credit">Photo by Lexi Laginess on unsplash.com</div>
-    </div>
-    <div class="divbody">
-        <div class="header">
-            <div class="header1">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</div>
-            <div class="header2">You know you want to.</div>
-        </div>
-        <div class="divform">
-            <form class="form" action="" method="get">
-                <div>
-                    <div class="caption">Let's do this!</div>
+        <div class="right">
+            <div class="header">
+                <div class="header1">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</div>
+                <div class="header2">You know you want to.</div>
+            </div>
+            <form  action="" method="get">
+                <div class="form">
                     <div class="inputForm">
-                        <div class="firstColumn">
-                            <div>
-                                <label for="firstName">FIRST NAME</label><br>
-                                <input type="text" name="firstName" id="firstName">
+                        <div class="caption">Let's do this!</div>
+                        <div class="divinput">
+                            <div class="firstColumn">
+                                <div class="input">
+                                    <label for="firstName">FIRST NAME</label><br>
+                                    <input type="text" name="firstName" id="firstName">
+                                </div>
+                                <div class="input">
+                                    <label for="email">EMAIL</label><br>
+                                    <input type="email" name="email" id="email">
+                                </div>
+                                <div class="input">
+                                    <label for="pwd">PASSWORD</label><br>
+                                    <input type="password" name="pwd" id="pwd" required>
+                                </div>
                             </div>
-                            <div>
-                                <label for="email">EMAIL</label><br>
-                                <input type="email" name="email" id="email">
-                            </div>
-                            <div>
-                                <label for="pwd">PASSWORD</label><br>
-                                <input type="password" name="pwd" id="pwd">
-                            </div>
-                        </div>
-                        <div class="secondColumn">
-                            <div>
-                                <label for="lastName">LAST NAME</label><br>
-                                <input type="text" name="lastName" id="lastName">
-                            </div>
-                            <div>
-                                <label for="phone">PHONE NUMBER</label><br>
-                                <input type="tel" name="phone" id="phone">
-                            </div>
-                            <div>
-                                <label for="confirmPwd">CONFIRM PASSWORD</label><br>
-                                <input type="password" name="confirmPwd" id="confirmPwd">
+                            <div class="secondColumn">
+                                <div class="input">
+                                    <label for="lastName">LAST NAME</label><br>
+                                    <input type="text" name="lastName" id="lastName">
+                                </div>
+                                <div class="input">
+                                    <label for="phone">PHONE NUMBER</label><br>
+                                    <input type="tel" name="phone" id="phone">
+                                </div>
+                                <div class="input">
+                                    <label for="confirmPwd">CONFIRM PASSWORD</label><br>
+                                    <input type="password" name="confirmPwd" id="confirmPwd">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <button>Create Account</button>
+                <div class="button"><button>Create Account</button></div>
             </form>
+            <div class="footer">Already have an account? Log in</div>
         </div>
-        <div class="footer">Already have an account? Log in</div>
     </div>
 </body>
 </html>

@@ -1,13 +1,22 @@
-body {
-    display: flex;
-    margin: auto;
+@font-face {
+    font-family: 'norseBold';
+    src: url('Norse-Bold.otf')
 }
 
-.background {
-    max-width: 500px;
-    max-height: 800px;
+.content {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
 }
-.divlogo {
+
+.left {
+    background-image: url(bg.jpg);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 50vw;
+} 
+/* .divlogo {
     position: absolute;
     top: 150px;
     padding: 15px 122px;
@@ -19,7 +28,8 @@ body {
 }
 
 .divlogo > div {
-    font-size: 70px;
+    font-size: 80px;
+    font-family: 'norseBold';
 }
 
 .credit {
@@ -31,7 +41,7 @@ body {
     font-size: 14px;
 }
 
-.divbody {
+.right {
     background-color: rgba(232, 235, 242, 0.8);
 }
 
@@ -50,9 +60,8 @@ body {
     font-weight: 600;
 }
 
-.form > div {
+form {
     padding: 30px;
-    background-color: white;
 }
 
 .caption {
@@ -64,6 +73,8 @@ body {
     display: flex;
     gap: 40px;
     margin-top: 20px;
+    background-color: white;
+    flex-direction: column;
 }
 
 .firstColumn, .secondColumn {
@@ -74,12 +85,12 @@ body {
     font-weight: 500;
 }
 
-.form > button {
+button {
     margin: 30px 0 0 30px;
     border: 0;
     border-radius: 10px;
     padding: 12px 50px;
-    background-color: limegreen;
+    background-color: #596D48;
     font-size: 15px;
     font-weight: 600;
     color: white;
@@ -89,7 +100,24 @@ body {
     padding: 30px 0 30px 30px;
     font-size: 22px;
     font-weight: 500;
-    background-color: rgba(232, 235, 242, 0.8);
 }
 
+.input {
+    display: flex;
+    flex-direction: column;
+    opacity: 80%;
+}
+input {
+    border: solid 1px #E5E7EB;
+    border-radius: 3px;
+}
 
+input:focus {
+    outline: none;
+    border: solid 2px blue;
+}
+.pwd:invalid {
+    border-color: red;
+}
+
+ */
