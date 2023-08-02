@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'norseBold';
-    src: url('Norse-Bold.otf')
+    src: url('Norse-Bold.otf');
 }
 
 .content {
@@ -85,20 +85,14 @@
 
 .form {
     display: flex;
+    flex-wrap: wrap;
     gap: 3vw;
-}
-
-.formLeft, .formRight {
-    display: flex;
-    flex-direction: column;
-    width: 30vw;
-    gap: 2vh;
 }
 
 .input {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 40%;
     font-size: 14px;
 }
 
@@ -136,6 +130,16 @@ input:focus {
     outline: none;
     border: solid 2px blue;
     box-shadow: 2px 2px rgba(232, 235, 242, 0.8);
+}
+
+.checkPass {
+    color: red;
+    font-size: 12px;
+}
+
+.alertConfirmPwd {
+    outline: none;
+    border: solid 2px red;
 }
 
 @media only screen and (max-width: 600px) {
@@ -192,6 +196,8 @@ input:focus {
         text-align: center;
         padding: 30px 0 30px 0;
         background-color: none;
+        justify-content: center;
+        align-items: center;
     }
 
     .title {
@@ -199,19 +205,17 @@ input:focus {
     }
     
     .form {
-        flex-direction: column;  
+        flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
         margin: 0;
         padding: 0;
-    }
-
-    .formLeft, .formRight {
-        justify-content: center;
-        align-items: center;
         width: 70%;
     }
 
+    .input {
+        width: 100%;
+    }
     .button {
         padding: 30px 0 0 0;
         display: flex;
@@ -221,6 +225,6 @@ input:focus {
     .footer {
         text-align: center;
         padding: 10px 0 30px 0;
-        font-size: 18px;
+        font-size: 16px;
     }
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="content">
@@ -25,33 +26,30 @@
                 <div class="formAll">
                     <div class="title">Let's do this!</div>
                     <div class="form">
-                        <div class="formLeft">
-                            <div class="input">
-                                <label for="firstName">FIRST NAME</label>
-                                <input type="text" name="firstName" id="firstName" required>
-                            </div>
-                            <div class="input">
-                                <label for="email">EMAIL</label>
-                                <input type="email" name="email" id="email" required>
-                            </div>
-                            <div class="input">
-                                <label for="pwd">PASSWORD</label>
-                                <input type="password" name="pwd" id="pwd" required>
-                            </div>
+                        <div class="input">
+                            <label for="firstName">FIRST NAME</label>
+                            <input type="text" name="firstName" id="firstName" required>
                         </div>
-                        <div class="formRight">
-                            <div class="input">
-                                <label for="lastName">LAST NAME</label>
-                                <input type="text" name="lastName" id="lastName" required>
-                            </div>
-                            <div class="input">
-                                <label for="phone">PHONE NUMBER</label>
-                                <input type="tel" name="phone" id="phone">
-                            </div>
-                            <div class="input">
-                                <label for="confirmPwd">CONFIRM PASSWORD</label>
-                                <input type="password" name="confirmPwd" id="confirmPwd" required>
-                            </div>
+                        <div class="input">
+                            <label for="lastName">LAST NAME</label>
+                            <input type="text" name="lastName" id="lastName" required>
+                        </div>
+                        <div class="input">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="input">
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" name="phone" id="phone" minlength="10" maxlength="10" required>
+                        </div>
+                        <div class="input">
+                            <label for="pwd">PASSWORD</label>
+                            <input type="password" name="pwd" id="pwd" required onkeyup="check()">
+                            <span class="checkPass"> </span>
+                        </div>
+                        <div class="input">
+                            <label for="confirmPwd">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirmPwd" id="confirmPwd" required onkeyup="check()">
                         </div>
                     </div>
                 </div>
